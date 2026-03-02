@@ -1,0 +1,238 @@
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-image: url("../images/wave-background.png");
+    background-repeat: repeat;
+}
+
+/* CSS for nav bar & Inital Hamburger Menu*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #096EE0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+
+}
+
+.navbar a {
+    color: #ffff00;
+    float: left;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.25s ease-in-out;
+}
+
+.dropdown {
+    float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.dropdown .dropbtn {
+    font-family: inherit;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: #ffff00;
+    padding: 0;
+    float: none;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #096EE0;
+    padding: 8px 8px;
+    display: block;
+    text-align: left;
+    transition: all 0.25s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 5px;
+    width: 35px;
+    margin: 3.5px;
+    background-color: #ffff00;
+    border-radius: 25px;
+}
+
+/* Setting font sizes for all pages */
+h1 {
+    font-size: 72px;
+}
+
+span{
+    background-color: rgba(255, 255, 255, 0.749);
+}
+
+
+
+h2 {
+    font-size: 42px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 26px;
+    line-height: 35px;
+}
+
+p.error {
+    margin-top: 150px;
+    text-align: center;
+}
+
+p.success {
+    margin-top: 150px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    line-height: 15px;
+}
+
+figcaption {
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+
+/* Giving all images a border and shadow */
+figure img,
+img {
+    border: 4px solid rgba(41, 23, 1, 1);
+    box-shadow: 10px 10px 8px 0px black;
+}
+
+/* Form Styling */
+input#name {
+    margin: 15px 0px;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 6px;
+    border: 1px solid #096EE0;
+    border-radius: 5px;
+}
+
+textarea#comment {
+    margin: 15px 0px;
+    min-width: 100%;
+    height: 150px;
+    border: 1px solid #096EE0;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+input[type=submit] {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    background-color: #096EE0;
+    color: #ffff00;
+    margin: 15px 0px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+/* main Layout */
+main {
+    margin: auto;
+    max-width: 1100px;
+    flex-grow: 1;
+}
+
+/*Horizonal line for all 'Things To Do' Pages */
+.hr-line,
+.hr-lineContent {
+    flex-basis: 100%;
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+.hr-lineContent {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CSS for footer */
+footer {
+    background-color: #096EE0;
+    display: block;
+    color: #ffff00;
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px 0px;
+
+}
+
+footer a {
+    color: #ffff00;
+    margin: 0px 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+footer .references, .backToTop{
+    text-decoration: underline;
+
+}
+
+/* CSS for Gallery page */
+.containerGallery {
+    overflow: auto;
+    white-space: nowrap;
+    padding-top: 200px;
+
+}
+

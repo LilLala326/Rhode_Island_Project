@@ -1,0 +1,534 @@
+/* Flex layout for all containers */
+.homepageContainer,
+.containerRI,
+.containerProv,
+.containerTTD-prov,
+.containerCranston,
+.containerTTD-cranston,
+.containerWarwick,
+.containerTTD-warwick,
+.containerMaps,
+.containerReferences,
+.containerGrade {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerRI figure,
+.containerProv figure,
+.containerCranston figure,
+.containerWarwick figure,
+.containerMaps figure,
+.containerTTD-prov figure,
+.containerTTD-cranston figure,
+.containerTTD-warwick figure {
+    margin: auto;
+}
+
+.containerTTD-prov figure,
+.containerTTD-cranston figure,
+.containerTTD-warwick figure {
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.containerTTD-prov img,
+.containerTTD-cranston img,
+.containerTTD-warwick img {
+    width: 350px;
+    height: 250px;
+}
+
+/* Homepage Layout (index) */
+.homepageContainer p {
+    text-align: center;
+}
+
+.homepageContainer img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homepage {
+    font-size: 96px;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+
+/* About Rhode Island Layout */
+.containerRI h1,
+.ri1 {
+    flex-basis: 100%;
+}
+
+.ri2 {
+    flex-basis: 50%
+}
+
+.ri3 {
+    flex-basis: 100%;
+}
+
+.riBreak {
+    display: none;
+}
+
+/* Providence Layout */
+.containerProv h1 {
+    flex-basis: 100%;
+}
+
+.containerProv .prov1 {
+    flex-basis: 46%;
+}
+
+/* Things To Do In Providence Layout */
+.containerTTD-prov h1 {
+    flex-basis: 100%;
+}
+
+.containerTTD-prov .waterfire,
+.RISD,
+.federalHill,
+.thayerSt,
+.rogerWilliams {
+    flex-basis: 55%;
+}
+
+/* Cranston Layout */
+.containerCranston h1 {
+    flex-basis: 100%;
+}
+
+.containerCranston .cranston1 {
+    flex-basis: 45%;
+}
+
+/* Things To Do In Cranston */
+.containerTTD-cranston h1 {
+    flex-basis: 100%;
+}
+
+.containerTTD-cranston .gardenCity,
+.rolfeSquare,
+.pawtuxetVill {
+    flex-basis: 55%;
+}
+
+/* Warwick Layout */
+.containerWarwick h1 {
+    flex-basis: 100%;
+}
+
+.containerWarwick .warwick1 {
+    flex-basis: 100%;
+}
+
+.containerWarwick .warwick2 {
+    flex-basis: 50%;
+}
+
+.containerWarwick .warwick3 {
+    flex-basis: 100%;
+}
+
+/* Things To Do In Warwick */
+.containerTTD-warwick h1 {
+    flex-basis: 100%;
+}
+
+.containerTTD-warwick .warwickMall,
+.oaklandBeach,
+.seafoodSpots,
+.lilRhody {
+    flex-basis: 55%;
+}
+
+.warwickBreak {
+    display: none;
+}
+
+/* Maps Layout */
+.containerMaps h1,
+.containerMaps h2,
+.containerMaps p,
+.containerMaps figure,
+.containerMaps figcaption,
+.containerMaps a {
+    text-align: center;
+}
+
+.containerMaps h1,
+.containerMaps h2,
+.containerMaps figure,
+.containerMaps a,
+.containerMaps p {
+    flex-basis: 100%;
+}
+
+/* References Layout */
+.containerReferences h1,
+.containerReferences a {
+    flex-basis: 100%;
+
+}
+
+/* Grading Layout */
+.containerGrade h1,
+.containerGrade h2,
+.containerGrade p {
+    flex-basis: 100%;
+
+}
+
+/* Css for Hamburger Menu */
+@media (max-width: 1330px) {
+
+    main {
+        padding-top: 75px;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    /* Turning the Hamburger Menu Button to a X */
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu a {
+        padding: 0px;
+
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        right: -100%;
+        text-align: center;
+        position: fixed;
+        top: 43px;
+        width: 250px;
+        background-color: #096EE0;
+        box-shadow: 0px 10px 8px 0px black;
+        border-radius: 0px 0px 0px 15px;
+        transition: all 0.35s ease-in-out;
+
+    }
+
+    .nav-menu li {
+        margin-top: 15%;
+    }
+
+    .nav-menu.active {
+        right: 0;
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    p.error {
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    p.success {
+        margin-top: 150px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1130px) {
+
+    main {
+        max-width: 800px;
+    }
+
+    /* Updating the Font Sizes */
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    figcaption {
+        font-size: 14px;
+    }
+
+    /* Updating About Rhode Island Page */
+    .containerRI .ri2 {
+        flex-basis: 45%;
+    }
+
+    /* Updating Providence Page */
+    .containerProv img {
+        width: 375px;
+        height: 275px;
+    }
+
+    .containerProv .prov1 {
+        flex-basis: 100%;
+    }
+
+    .containerProv img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .containerProv .prov3 {
+        flex-basis: 45%;
+    }
+
+    /* Updating Cranston Page */
+    .containerCranston .cranston1 {
+        flex-basis: 100%;
+
+    }
+
+    .containerCranston img {
+        width: 350px;
+        height: 250px;
+    }
+
+    /* Updating Warwick Page */
+    .containerWarwick img {
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Updating all Things To Do Pages */
+    .containerTTD-prov .waterfire,
+    .containerTTD-prov .RISD,
+    .containerTTD-prov .federalHill,
+    .containerTTD-prov .thayerSt,
+    .containerTTD-prov .rogerWilliams,
+    .containerTTD-cranston .gardenCity,
+    .containerTTD-cranston .rolfeSquare,
+    .containerTTD-cranston .pawtuxetVill,
+    .containerTTD-warwick .warwickMall,
+    .containerTTD-warwick .oaklandBeach,
+    .containerTTD-warwick .seafoodSpots,
+    .containerTTD-warwick .lilRhody {
+        flex-basis: 55%;
+
+    }
+
+    .containerTTD-prov figure,
+    .containerTTD-cranston figure,
+    .containerTTD-warwick figure {
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .containerTTD-prov img,
+    .containerTTD-cranston img,
+    .containerTTD-warwick img {
+        width: 300px;
+        height: 200px;
+    }
+
+    /* Updating Horizonal Line for Things to Do Pages */
+    .hr-lineContent {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+}
+
+
+@media (max-width: 820px) {
+
+    main {
+        max-width: 650px;
+
+    }
+
+    /* Updating the Font Sizes */
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    figcaption {
+        font-size: 13px;
+    }
+
+    /* Updating the About Rhode Island Page */
+    .containerRI .ri2 {
+        flex-basis: 100%;
+
+    }
+
+    .containerRI .ri3 {
+        flex-basis: 50%;
+
+    }
+
+    .containerRI img {
+        width: 225px;
+        height: 175px;
+    }
+
+    .riBreak {
+        display: block;
+    }
+
+    /* Updating the Providence Page */
+    .containerProv img {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    /* Updating the Warwick Page */
+    .containerWarwick .warwick2 {
+        flex-basis: 55%;
+
+    }
+
+    .containerWarwick img {
+        width: 275px;
+        height: 200px;
+
+    }
+
+    /* Updating all Things To Do Pages */
+    .containerTTD-prov .waterfire,
+    .containerTTD-prov .RISD,
+    .containerTTD-prov .federalHill,
+    .containerTTD-prov .thayerSt,
+    .containerTTD-prov .rogerWilliams,
+    .containerTTD-cranston .gardenCity,
+    .containerTTD-cranston .rolfeSquare,
+    .containerTTD-cranston .pawtuxetVill,
+    .containerTTD-warwick .warwickMall,
+    .containerTTD-warwick .oaklandBeach,
+    .containerTTD-warwick .seafoodSpots,
+    .containerTTD-warwick .lilRhody {
+        flex-basis: 100%;
+
+    }
+
+    .hr-lineContent {
+        margin-top: 3rem;
+
+    }
+
+    /* Updating the Maps Page */
+    .mapUSA img {
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    main {
+        max-width: 500px;
+    }
+
+    .homepageContainer h1 {
+        font-size: 76px;
+    }
+
+    /* Updating flex-basis for all pages */
+    .containerRI .ri3 {
+        flex-basis: 100%;
+    }
+
+    .containerProv .prov3 {
+        flex-basis: 100%;
+    }
+
+    .containerWarwick .warwick2 {
+        flex-basis: 100%;
+    }
+
+    .mapUSA img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .mapRI img {
+        width: 300px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    main {
+        max-width: 450px;
+    }
+
+    .homepageContainer img {
+        width: 350px;
+        height: 225px;
+    }
+
+    .mapUSA img {
+        width: 400px;
+        height: 275px;
+
+    }
+
+}
+
+@media (max-width: 470px) {
+    main {
+        max-width: 375px;
+    }
+
+    /* Updating Font Sizes */
+    .homepageContainer h1 {
+        font-size: 56px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .mapUSA img {
+        width: 300px;
+        height: 250px;
+    }
+}
